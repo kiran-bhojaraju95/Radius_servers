@@ -5,6 +5,7 @@ module "server1" {
   instance_type = var.instance_type
   subnet_1_id     = var.subnet_1_id
 }
+
 module "server2" {
   source        = "./modules/server2"
   instance_name = var.instance_name_2
