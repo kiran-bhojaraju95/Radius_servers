@@ -9,4 +9,11 @@ resource "aws_instance" "server1" {
     Project     = "MyProject"
     App_ID = "Test"
   }
+  
+  metadata_options {
+    http_tokens   = "required"  # Enforces IMDSv2
+    http_put_response_hop_limit = 2
+    http_endpoint = "enabled"
+  }
+
 }
