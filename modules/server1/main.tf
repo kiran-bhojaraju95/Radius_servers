@@ -7,5 +7,6 @@ resource "aws_instance" "server1" {
     Name        = "Server1"
     Environment = "Development"
     Project     = "MyProject"
+    App_ID = "Test"
   }
 }
