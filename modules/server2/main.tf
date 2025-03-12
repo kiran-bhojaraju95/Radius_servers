@@ -4,6 +4,8 @@ resource "aws_instance" "server2" {
   subnet_id     = var.subnet_2_id
 
   tags = {
-    Name = var.instance_name
+    Name        = "Server2"
+    Environment = "Development"
+    Project     = "MyProject"
   }
 }
